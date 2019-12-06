@@ -1,0 +1,58 @@
+TestNG-- Java unit testing framework
+-Available as JAR file
+-TDD--Test Driven Development
+-Open source
+
+Note : To run all the classes in the package we will create an xml(testng.xml) file in source folder and include all classes in that as a test suite.
+Then run the xml file as testNG test suite to execute all the test cases.
+
+Purpose:Design test cases in a systematic way
+- html report
+- Different Annotations
+- Data provider
+- Grouping of test cases - @Test(groups="")
+- Priority/sequence of test cases @Test(priority=1)
+- Dependency @Test(dependsOnMethods = "login") or @Test(dependsOnGroups = "title")
+- supports Parameterization
+- Supported by lot of tools and plugins
+- Multithread support
+
+
+Annotations available:
+Note : Each Annotation should be associated with a method
+--Pre-Condition annotations
+-@BeforeSuite
+-@BeforeTest
+-@BeforeClass
+-@BeforeMethod
+
+--Test cases
+-@Test
+
+--Post-Condition annotations
+-@AfterMethod
+-@AfterClass
+-@AfterTest
+-@AfterSuite
+
+For each @Test (test case) @BeforeMethod and @AfterMethod will be executed
+Testcase1:
+@BeforeMethod 
+@Test
+@AfterMethod
+
+Testcase2:
+@BeforeMethod 
+@Test
+@AfterMethod
+
+Testcase3:
+@BeforeMethod 
+@Test
+@AfterMethod
+
+Features :
+- Invocation count -- with this attribute or feature we can run a test multiple times(@Test(invocationCount = 3))
+- timeout -- with this we can set timeout in milliseconds (@Test(timeout = 2))
+- expectedExceptions -- with this we can handle exceptions (@Test(expectedExceptions = NumberFormatException.class))
+

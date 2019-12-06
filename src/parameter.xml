@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG test automation suite">
+	<test name="Different TestNG feature test">
+	<parameter name= 'url' value= 'https://www.facebook.com'></parameter>
+	<parameter name='username' value = 'tonimagoswami@gmail.com'>
+	<parameter name= 'password' value = 'Victoria2017'></parameter>
+	
+	
+		<classes>
+			<class name = "com.test.FacebookTest"></class>
+
+		</classes>
+
+	</test>
+</suite>

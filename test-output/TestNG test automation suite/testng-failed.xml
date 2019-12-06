@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG test automation suite]">
+  <test name="Different TestNG feature test(failed)">
+    <classes>
+      <class name="com.test.FacebookTest">
+        <methods>
+          <include name="Login" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.test.FacebookTest -->
+    </classes>
+  </test> <!-- Different TestNG feature test(failed) -->
+</suite> <!-- Failed suite [TestNG test automation suite] -->
